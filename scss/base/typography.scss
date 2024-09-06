@@ -1,0 +1,39 @@
+.section-title{
+    font-family: "Syne", sans-serif;
+    font-weight: 700;
+    font-size: 56px;
+    color: $black;
+    &--md{
+        font-family: "Syne", sans-serif;
+        font-weight: 500;
+        font-size: 48px;
+        color: $black;
+    }
+    &--sm{
+        font-weight: 600;
+        font-size: 20px;
+        text-transform: uppercase;
+        text-align: center;
+        color: $black;
+    }
+}
+.column-title{
+    font-weight: 700;
+    font-size: 24px;
+    color: $black;
+    // opacity: 0.6;
+}
+.section-text{
+    font-family: "Syne", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 133%;
+    color: $black;
+    &--sm{
+        font-family: "Syne", sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 114%;
+        color: $black;
+    }
+}

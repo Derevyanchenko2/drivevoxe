@@ -1,0 +1,26 @@
+// libs
+
+
+// base
+@import './base/variables.scss';
+@import './base/utils.scss';
+@import './base/typography.scss';
+
+
+@import 'base.scss';
+
+
+
+
+@import './blocks/_header.scss';
+@import './blocks/_main.scss';
+@import './blocks/_logos.scss';
+@import './blocks/_fleet.scss';
+@import './blocks/_advantages.scss';
+@import './blocks/_reviews.scss';
+@import './blocks/_cta.scss';
+@import './blocks/_footer.scss';
+
+
+// thanks-page
+// @import '_thanks-page.scss';

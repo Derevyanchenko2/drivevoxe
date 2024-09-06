@@ -1,0 +1,11 @@
+.partners-logos {
+    padding: 25px;
+    backdrop-filter: blur(10px);
+    box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.1);
+    background: linear-gradient(149deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.2) 100%);
+    display: flex;
+    align-items: center;
+}
+.partners-logo:not(:last-child){
+    margin-right: 88px;
+}
