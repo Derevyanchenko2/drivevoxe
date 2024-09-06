@@ -131,3 +131,44 @@
     color: $black;
 }
 // main logos
+
+
+
+// main section styles
+.main-content {
+    padding: 56px 0;
+    max-width: 630px;
+    width: 100%;
+    margin: 0 auto;
+}
+.main-breadcrumb {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 22px;
+}
+.main-breadcrumb li + li::before {
+    content: "/";
+    color: $black;
+}
+
+.main-breadcrumb__list {
+    display: flex;
+}
+
+.main-breadcrumb__link {
+    font-family: "Syne", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: $black;
+}
+
+.main-content__title {
+    text-align: center;
+}
+
+.hero-image {
+    img{
+        width: 100%;
+    }
+}

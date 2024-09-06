@@ -14,36 +14,36 @@
     max-width: 968px;
     margin: 0 auto;
 }
-.fleet-row {
+.cars-row {
     margin-left: -30px;
     margin-right: -30px;
 }
-.fleet-column {
+.car-column {
    padding-left: 30px;
    padding-right: 30px;
    margin-bottom: 50px;
 }
-.fleet-item {
+.car-item {
     border-radius: 10px;
     background: rgba(34, 34, 34, 0.03);
     padding: 12px 12px 24px 12px;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
-.fleet-item:hover {
+.car-item:hover {
     background-color: $red;
     color: $white;
     transition: 0.3s all;
 }
 
-.fleet-item:hover .fleet-content__title,
-.fleet-item:hover .fleet-bottom__start,
-.fleet-item:hover .fleet-bottom__price,
-.fleet-item:hover .fleet-btn {
+.car-item:hover .car-content__title,
+.car-item:hover .car-bottom__start,
+.car-item:hover .car-bottom__price,
+.car-item:hover .car-btn {
     color: $white;
     transition: 0.3s all;
 }
 
-.fleet-btn {
+.car-btn {
     background-color: $white;
     color: $red;
     border: 1px solid $red;
@@ -53,24 +53,27 @@
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.fleet-item:hover .fleet-btn {
+.car-item:hover .car-btn {
     background-color: $white;
     color: $red;
 }
-.fleet-item__image {
+.car-item__image {
     margin-bottom: 32px;
+    img{
+        width: 100%;
+    }
 }
-.fleet-content__title {
+.car-content__title {
     margin-bottom: 23px;
 
 }
-.fleet-bottom__wrapper {
+.car-bottom__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
 }
 
-.fleet-bottom__start {
+.car-bottom__start {
     font-family: "Syne", sans-serif;
     font-weight: 600;
     font-size: 16px;
@@ -81,6 +84,7 @@
 // pagination
 
 .fleet-pagination {
+    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;

@@ -16,8 +16,7 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
     <body>
-        <div class="main-screen">
-            <div class="mobileMenu-overlay">
+        <div class="mobileMenu-overlay">
     <div class="mobileMenu">
         <button class="mobileMenu-close">&times;</button>
         <div class="mobileMenu-container">
@@ -73,112 +72,44 @@
         </div>
     </div>
 </header>
-            <main class="main">
-    <div class="container">
-        <div class="main-wrapper">
-            <div class="main-left">
-                <h1 class="main-left__title section-title">
-                    Your Journey, Your Car, Your Way
-                </h1>
-                <p class="main-left__text section-text">
-                    Experience the ultimate freedom of choice with GoCar - tailor your adventure by choosing from our premium fleet of vehicles.
-                </p>
-                <button class="main-btn btn">
-                    Get Started
-                </button>
-                <div class="main-icons">
-                    <div class="main-icon">
-                        <img src="./images/main-images/icons/1.svg" alt="Icon 1">
-                    </div>
-                    <div class="main-icon">
-                        <img src="./images/main-images/icons/2.svg" alt="Icon 2">
-                    </div>
-                    <div class="main-icon">
-                        <img src="./images/main-images/icons/3.svg" alt="Icon 3">
-                    </div>
-                    <div class="main-icon">
-                        <img src="./images/main-images/icons/4.svg" alt="Icon 4">
-                    </div>
-                </div>
-            </div>
-            <div class="main-right">
-                <div class="main-right__service">
-                    <div class="main-persons">
-                        <div class="main-person">
-                            <img src="./images/main-images/persons-icons/1.svg" alt="Person 1">
-                        </div>
-                        <div class="main-person">
-                            <img src="./images/main-images/persons-icons/2.svg" alt="Person 2">
-                        </div>
-                        <div class="main-person">
-                            <img src="./images/main-images/persons-icons/3.svg" alt="Person 3">
-                        </div>
-                    </div>
-                    <div class="main-info">
-                        <h4 class="main-info__title section-title--sm">
-                            12.5K+ People
-                        </h4>
-                        <p class= "main-info__text">
-                            has used our services such as renting, buying, or even selling their car.
-                        </p>
-                    </div>
-                </div>
-                <div class="main-buttons">
-                    <a href="#" class="main-button">Rent</a>
-                    <a href="#" class="main-button">Buy</a>
-                    <a href="#" class="main-button">Sell</a>
-                    <a href="#" class="main-button">Consult</a>
-                </div>
-                <div class="main-more__link">
-                    <a href="#" class="more-link">Learn more</a>
-                    <div class="more-link__arrow">
-                        <svg width="25" height="9" viewBox="0 0 25 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M24.3536 4.96024C24.5488 4.76498 24.5488 4.4484 24.3536 4.25314L21.1716 1.07116C20.9763 0.875893 20.6597 0.875893 20.4645 1.07116C20.2692 1.26642 20.2692 1.583 20.4645 1.77826L23.2929 4.60669L20.4645 7.43512C20.2692 7.63038 20.2692 7.94696 20.4645 8.14222C20.6597 8.33749 20.9763 8.33749 21.1716 8.14222L24.3536 4.96024ZM0 5.10669H24V4.10669H0V5.10669Z" fill="#222222" />
-                        </svg>
-                    </div>
-                </div>
-               
-            </div>
-        </div>
-    </div>
-</main>
-        </div>
-        <div class="partners">
-    <div class="container">
-        <div class="partners-logos">
-            <div class="partners-logo">
-                <img src="./images/main-images/logos/1.svg" alt="">
-            </div>
-            <div class="partners-logo">
-                <img src="./images/main-images/logos/2.svg" alt="">
-            </div>
-            <div class="partners-logo">
-                <img src="./images/main-images/logos/3.svg" alt="">
-            </div>
-            <div class="partners-logo">
-                <img src="./images/main-images/logos/4.svg" alt="">
-            </div>
-            <div class="partners-logo">
-                <img src="./images/main-images/logos/5.svg" alt="">
-            </div>
-            <div class="partners-logo">
-                <img src="./images/main-images/logos/6.svg" alt="">
-            </div>
-        </div>
-    </div>
     
-</div>
-
-        <section class="fleet">
-    <div class="container">
-        <div class="fleet-heading">
-            <h4 class="fleet-heading__subtitle section-title--sm">THE CARS</h4>
-            <h2 class="fleet-heading__title section-title">
-                Our Impressive Fleet
-            </h2>
+        <div class="main-section">
+            <div class="main-content">
+                <nav aria-label="breadcrumb" class="main-breadcrumb">
+                    <ul class="main-breadcrumb__list">
+                        <li class="main-breadcrumb__item" ><a class="main-breadcrumb__link" href="./index.html">Home</a></li>
+                        <li class="main-breadcrumb__item"><a class="main-breadcrumb__link" href="#">Cars</a></li>
+                    </ul>
+                </nav>
+                <h2 class="main-content__title section-title">Our Impressive Fleet</h2>
+            </div>
+            <div class="hero-image">
+                <img src="./images/cars-main-image.jpg" alt="Car Image">
+            </div>
         </div>
-        <div class="fleet-wrapper">
-            <div class="cars-row row">
+        
+        <section class="cars">
+    <div class="container">
+        <div class="sort-container">
+            <p class="results-count">Showing 1-9 of 24 results</p>
+            <div class="sort-dropdown">
+                <select id="sort">
+                    <option value="default">Default Sorting</option>
+                    <option value="price-low-high">Price: Low to High</option>
+                    <option value="price-high-low">Price: High to Low</option>
+                </select>
+            </div>
+            <div class="sidebar-search">
+                <input class="sidebar-search__input" type="text" placeholder="Search Your Pick Car...">
+                <button type="submit" class="sidebar-search__icon">
+                    <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.8672 13.7745L10.2526 10.2177C11.1991 9.18927 11.7807 7.82921 11.7807 6.33261C11.7803 3.1311 9.14327 0.536133 5.89013 0.536133C2.63699 0.536133 0 3.1311 0 6.33261C0 9.53412 2.63699 12.1291 5.89013 12.1291C7.29571 12.1291 8.58488 11.6429 9.59751 10.8347L13.2261 14.4055C13.4029 14.5797 13.6899 14.5797 13.8668 14.4055C14.044 14.2313 14.044 13.9486 13.8672 13.7745ZM5.89013 11.2373C3.13762 11.2373 0.906279 9.04138 0.906279 6.33261C0.906279 3.62384 3.13762 1.42795 5.89013 1.42795C8.64266 1.42795 10.874 3.62384 10.874 6.33261C10.874 9.04138 8.64266 11.2373 5.89013 11.2373Z" fill="#222222" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="cars-wrapper">
+            <div class="cars-сatalog cars-row  row">
                 <a href="#" class="car-column col-4">
                     <div class="car-item">
                         <div class="car-item__image">
@@ -269,135 +200,163 @@
                         </div>
                     </div>
                 </a>
+                <a href="#" class="car-column col-4">
+                    <div class="car-item">
+                        <div class="car-item__image">
+                            <img src="./images/fleet-images/car-7.png" alt="car 7">
+                        </div>
+                        <h4 class="car-content__title column-title">Horizon Mirage Convertible</h4>
+                        <div class="car-bottom__wrapper">
+                            <div class="car-bottom">
+                                <h5 class="car-bottom__start">Starting at</h5>
+                                <h4 class="car-bottom__price column-title">49/day</h4>
+                            </div>
+                            <button class="car-btn btn">Rent</button>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="car-column col-4">
+                    <div class="car-item">
+                        <div class="car-item__image">
+                            <img src="./images/fleet-images/car-8.png" alt="car 8">
+                        </div>
+                        <h4 class="car-content__title column-title">Horizon Mirage Convertible</h4>
+                        <div class="car-bottom__wrapper">
+                            <div class="car-bottom">
+                                <h5 class="car-bottom__start">Starting at</h5>
+                                <h4 class="car-bottom__price column-title">49/day</h4>
+                            </div>
+                            <button class="car-btn btn">Rent</button>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="car-column col-4">
+                    <div class="car-item">
+                        <div class="car-item__image">
+                            <img src="./images/fleet-images/car-9.png" alt="car 9">
+                        </div>
+                        <h4 class="car-content__title column-title">Horizon Mirage Convertible</h4>
+                        <div class="car-bottom__wrapper">
+                            <div class="car-bottom">
+                                <h5 class="car-bottom__start">Starting at</h5>
+                                <h4 class="car-bottom__price column-title">49/day</h4>
+                            </div>
+                            <button class="car-btn btn">Rent</button>
+                        </div>
+                    </div>
+                </a>
+                <div class="fleet-pagination">
+                    <a href="#" class="active">01</a>
+                    <a href="#">02</a>
+                    <a href="#">03</a>
+                    <a href="#">04</a>
+                    <a href="#">05...</a>
+                  </div>
             </div>
+            
+            <aside class="sidebar">
+                <div class="sidebar-group">
+                    <h3 class="cars-sidebar__title">Popular Cars</h3>
+                    <div class="popular-cars">
+                        <a href="#" class="popular-car">
+                            <img src="./images/fleet-images/car-5.png" alt="Stellar Orion Hybrid">
+                            <div class="car-info">
+                                <h5 class="car-info__name car-info__text">Stellar Orion Hybrid</h5>
+                                <span class="car-info__price car-info__text">$39/day</span>
+                            </div>
+                        </a>
+                        <a href="#" class="popular-car">
+                            <img src="./images/fleet-images/car-2.png" alt="Stellar Orion Hybrid">
+                            <div class="car-info">
+                                <h5 class="car-info__name car-info__text">Stellar Orion Hybrid</h5>
+                                <span class="car-info__price car-info__text">$39/day</span>
+                            </div>
+                        </a>
+                        <a href="#" class="popular-car">
+                            <img src="./images/fleet-images/car-7.png" alt="Stellar Orion Hybrid">
+                            <div class="car-info">
+                                <h5 class="car-info__name car-info__text">Stellar Orion Hybrid</h5>
+                                <span class="car-info__price car-info__text">$39/day</span>
+                            </div>
+                        </a>
+                        <a href="#" class="popular-car">
+                            <img src="./images/fleet-images/car-9.png" alt="Stellar Orion Hybrid">
+                            <div class="car-info">
+                                <h5 class="car-info__name car-info__text">Stellar Orion Hybrid</h5>
+                                <span class="car-info__price car-info__text">$39/day</span>
+                            </div>
+                        </a>
+                   
+                    </div>
+                </div>
+            
+                <div class="sidebar-group categories">
+                    <h3 class="cars-sidebar__title">Categories</h3>
+                    <div class="category-list">
+                        <ul class="category-column">
+                            <li>
+                                <a href="#">Hatchback</a> 
+                            </li>
+                            <li>
+                                <a href="#">Coupe</a>
+                            </li>
+                            <li>
+                                <a href="#">Station Wagon</a> 
+                            </li>
+                            <li>
+                                <a href="#">Micro Car</a> 
+                            </li>
+                            <li>
+                                <a href="#">Pickup</a> 
+                            </li>
+                            <li>
+                                <a href="#">SUV</a> 
+                            </li>
+                            <li>
+                                <a href="#">Convertible</a>
+                            </li>
+                        </ul>
+                        <ul class="category-column">
+                          <li>City Car</li>
+                          <li>Vintage</li>
+                          <li>Sports</li>
+                          <li>Minivan</li>
+                          <li>Sedan</li>
+                          <li>MPV</li>
+                          <li>Grand</li>
+                        </ul>
+                      </div>
+                </div>
+            
+                <div class="sidebar-group tags">
+                    <h3 class="cars-sidebar__title">Tags</h3>
+                    <div class="tags-list">
+                        <a href="#">Affordable</a>
+                        <a href="#">Popular cars</a>
+                        <a href="#">Sedan</a>
+                        <a href="#">Family Car</a>
+                        <a href="#">Vintage</a>
+                    </div>
+                </div>
+            </aside>
+            
         </div>
-        <div class="fleet-pagination">
-            <a href="#" class="active">01</a>
-            <a href="#">02</a>
-            <a href="#">03</a>
-            <a href="#">04</a>
-            <a href="#">05...</a>
-          </div>
+
     </div>
 </section>
 
-
-        <section class="advantages">
-    <div class="container">
-      <div class="advantages-wrapper">
-        <div class="advantages-content">
-          <h2 class="advantages-content__title section-title">
-            Why Choose Drivoxe?
-          </h2>
-          <p class="advantages-content__text section-text">
-            Join our satisfied customers who trust us for their journeys. We serve with a lot of values that you can feel directly.
-          </p>
-        </div>
-        <div class="advantages-image">
-          <img src="./images/advantages-car.png" alt="audi">
-          
-          <div class="badge badge-top-left">
-            <h4 class="badge-title">Easy Booking</h4>
-            <p class="badge-text">Reserve your car in just a few clicks.</p>
-          </div>
-  
-          <div class="badge badge-top-center">
-            <h4 class="badge-title">Quality & Variety</h4>
-            <p class="badge-text">Explore our diverse range of premium vehicles.</p>
-          </div>
-  
-          <div class="badge badge-bottom-right">
-            <h4 class="badge-title">Affordable Rates</h4>
-            <p class="badge-text">Enjoy competitive prices without hidden fees.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  
-        <section class="reviews">
-    <div class="container">
-        <div class="reviews-wrapper">
-            <div class="swiper reviews-swiper">
-                <div class="reviews-arrows">
-                    <button class="slide-btn prev-btn">
-                        <svg width="19" height="12" viewBox="0 0 19 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0.469669 6.29034C0.176777 5.99745 0.176777 5.52257 0.469669 5.22968L5.24264 0.45671C5.53553 0.163817 6.01041 0.163817 6.3033 0.45671C6.59619 0.749603 6.59619 1.22448 6.3033 1.51737L2.06066 5.76001L6.3033 10.0027C6.59619 10.2955 6.59619 10.7704 6.3033 11.0633C6.01041 11.3562 5.53553 11.3562 5.24264 11.0633L0.469669 6.29034ZM19 6.51001L1 6.51001L1 5.01001L19 5.01001L19 6.51001Z" fill="white"/>
-                        </svg>
-                    </button>
-                    <button class="slide-btn next-btn">
-                        <svg width="19" height="12" viewBox="0 0 19 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M18.5303 6.29034C18.8232 5.99745 18.8232 5.52257 18.5303 5.22968L13.7574 0.45671C13.4645 0.163817 12.9896 0.163817 12.6967 0.45671C12.4038 0.749603 12.4038 1.22448 12.6967 1.51737L16.9393 5.76001L12.6967 10.0027C12.4038 10.2955 12.4038 10.7704 12.6967 11.0633C12.9896 11.3562 13.4645 11.3562 13.7574 11.0633L18.5303 6.29034ZM-6.55671e-08 6.51001L18 6.51001L18 5.01001L6.55671e-08 5.01001L-6.55671e-08 6.51001Z" fill="white"/>
-                        </svg>
-                    </button>
-                </div>
-                <div class="swiper-wrapper reviews-wrapper">
-                    <div class="swiper-slide reviews-slide">
-                        <h4 class="reviews-content__subtitle section-title--sm">
-                            WHAT OUR CUSTOMERS SAY
-                        </h4>
-                        <h2 class="reviews-content__title section-title--md">
-                            "My Drivoxe experience was nothing short of incredible. The pristine car and impeccable service made my trip unforgettable. I'll be back for more."
-                        </h2>
-                        <div class="reviews-person">
-                            <img src="./images/reviews-person.svg" alt="reviews person image">
-                            <h4 class="reviews-person__name column-title">
-                                Aleea Thompson
-                            </h4>
-                        </div>
-                    </div>
-                    <div class="swiper-slide reviews-slide">
-                        <h4 class="reviews-content__subtitle section-title--sm">
-                            WHAT OUR CUSTOMERS SAY
-                        </h4>
-                        <h2 class="reviews-content__title section-title--md">
-                            "My Drivoxe experience was nothing short of incredible. The pristine car and impeccable service made my trip unforgettable. I'll be back for more."
-                        </h2>
-                        <div class="reviews-person">
-                            <img src="./images/reviews-person.svg" alt="reviews person image">
-                            <h4 class="reviews-person__name column-title">
-                                Aleea Thompson
-                            </h4>
-                        </div>
-                    </div>
-                    <div class="swiper-slide reviews-slide">
-                        <h4 class="reviews-content__subtitle section-title--sm">
-                            WHAT OUR CUSTOMERS SAY
-                        </h4>
-                        <h2 class="reviews-content__title section-title--md">
-                            "My Drivoxe experience was nothing short of incredible. The pristine car and impeccable service made my trip unforgettable. I'll be back for more."
-                        </h2>
-                        <div class="reviews-person">
-                            <img src="./images/reviews-person.svg" alt="reviews person image">
-                            <h4 class="reviews-person__name column-title">
-                                Aleea Thompson
-                            </h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="custom-button-prev"></div>
-                <div class="custom-button-next"></div>
-            </div>
-        </div>
-    </div>
-</section>
+        <!-- section cta -->
         <div class="container">
-    <div class="cta">
-        <img src="./images/cta-bg.jpg" alt="Car Image">
-        <div class="cta-content">
-            <h2 class="cta-content__title section-title">Ready to Go?</h2>
-            <p class="cta-content__text column-title">Book your car wherever you are and ride with us now!</p>
-            <div class="cta-buttons">
-                <a class="cta-button" href="#">
-                    <img src="./images/app-store.svg" alt="App Store">
-                </a>
-                <a class="cta-button" href="#">
-                    <img src="./images/google-play.svg" alt="Google Play">
-                </a>
+            <div class="book-cta cta">
+                <img src="./images/cta-bg/book-cta.jpg" alt="Car Image">
+                <div class="book-content cta-content">
+                    <h4 class="book-content__subtitle section-title--sm">Find Your Perfect Ride</h4>
+                    <h2 class="book-content__title section-title">Explore Our Fleet and Book Your Dream Car Today!</h2>
+                    <button class="book-btn btn">Let’s Drive with Us</button>
+                </div>
             </div>
         </div>
-    </div>
-</div>
+        <!-- ///section cta -->
         <footer class="footer">
     <div class="container">
         <div class="footer-wrapper">
