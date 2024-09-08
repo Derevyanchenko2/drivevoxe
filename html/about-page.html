@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Drivevoxe</title>
+    <link rel="stylesheet" href="css/main.css">
+    <!--==== Google Fonts ===-->
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!--===Main CSS====-->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/main.css">
+</head>
+    <body>
+        @@include('sections/header.html')
+        <div class="main-section">
+            <div class="main-content">
+                <nav aria-label="breadcrumb" class="main-breadcrumb">
+                    <ul class="main-breadcrumb__list">
+                        <li class="main-breadcrumb__item" ><a class="main-breadcrumb__link" href="./index.html">Home</a></li>
+                        <li class="main-breadcrumb__item"><a class="main-breadcrumb__link" href="#">About us</a></li>
+                    </ul>
+                </nav>
+                <h2 class="main-content__title section-title">Who We are</h2>
+            </div>
+            <div class="hero-image">
+                <img src="./images/about-main-image.jpg" alt="Car Image">
+            </div>
+        </div>
+        @@include('sections/logos.html')
+        @@include('sections/rental.html')
+        @@include('sections/benefits.html')
+        @@include('sections/steps.html')
+        @@include('sections/achievements.html')
+        
+        <div class="container">
+            <div class="reserve-cta cta">
+                <img src="./images/cta-bg/reserve-cta.jpg" alt="Car Image">
+                <div class="reserve-content cta-content">
+                    <h2 class="reserve-content__title section-title">Reserve Your Dream Car Today and Feel Best Experience Travel</h2>
+                    <button class="reserve-btn btn">Let’s Drive with Us</button>
+                </div>
+            </div>
+        </div>
+
+        @@include('sections/footer.html')
+
+        <!-- ===Scripting In=== -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

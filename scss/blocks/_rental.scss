@@ -1,0 +1,50 @@
+.rental {
+    padding: 100px 0;
+}
+.pick-car {
+    display: flex;
+    align-items: center;
+    margin-bottom: 213px;
+    position: relative;
+}
+.rental-arrow {
+    border-radius: 50%;
+    display: flex;
+    margin-right: 12px;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background: $red;
+}
+.rental-wrapper{
+    position: relative;
+}
+
+.rental-content {
+    max-width: 444px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.rental-item {
+    padding: 80px 40px;
+    box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.05);
+    background: #fff;
+}
+.rental-item__subtitle {
+    margin-bottom: 16px;
+    text-align: left;
+}
+.rental-item__title {
+    margin-bottom: 48px;
+}
+.rental-item__text {
+    font-family: "Syne", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 133%;
+    color: $black;
+    opacity: 0.6;
+}
