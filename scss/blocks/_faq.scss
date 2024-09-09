@@ -1,0 +1,122 @@
+.main-faq__content{
+  max-width: none;
+}
+.accordion {
+  padding: 100px 0;
+}
+
+.accordion-wrapper {
+  display: flex;
+}
+
+.booking-box {
+  margin-right: 40px;
+}
+
+.accordion-top {
+  margin-bottom: 80px;
+}
+
+.accordion-box__title {
+  margin-bottom: 40px;
+  font-family: "Syne", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: $black; 
+}
+
+.accordion-box {
+  max-width: 650px;
+  width: 100%;
+}
+
+.accordion-item {
+  margin-bottom: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.accordion-header {
+  font-family: "Syne", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 133%;
+  background: #f8f8f8;
+  color: $black; 
+  padding: 20px 26px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  position: relative;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.accordion-header .accordion-arrow {
+  position: absolute;
+  right: 26px;
+  top: 20px;
+  width: 12px;
+  height: 12px;
+  border-right: 2px solid $black;
+  border-bottom: 2px solid $black;
+  transform: rotate(45deg);
+  transition: transform 0.3s ease;
+}
+
+.accordion-item.active .accordion-arrow {
+  transform: rotate(-135deg);
+}
+
+/* Rest of your CSS... */
+.accordion-item.active .accordion-header .accordion-arrow{
+  border-right: 2px solid $white;
+  border-bottom: 2px solid $white;
+  background-color: $red; 
+  color: $white; 
+}
+.accordion-header::after {
+  content: "";
+  margin-left: auto;
+  border: 10px solid transparent;
+  transition: transform 0.3s ease;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, opacity 0.5s ease;
+  background: #f8f8f8;
+  opacity: 0; 
+}
+
+.accordion-content p {
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 20px;
+  font-family: "Syne", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 114%;
+  color: $black; 
+}
+
+.accordion-item.active .accordion-header {
+  background-color: $red; 
+  color: $white; 
+}
+
+.accordion-item.active .accordion-header::after {
+  transform: rotate(90deg);
+}
+
+.accordion-item.active .accordion-content {
+  max-height: 1000px; 
+  opacity: 1; 
+  transition: max-height 1s ease, opacity 0.5s ease;
+  background-color: $red; 
+  color: $white; 
+}
+
+.accordion-item.active .accordion-content p {
+  color: $white;
+}
