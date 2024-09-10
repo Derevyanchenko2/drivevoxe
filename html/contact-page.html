@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Drivevoxe</title>
+    <link rel="stylesheet" href="css/main.css">
+    <!--==== Google Fonts ===-->
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!--===Main CSS====-->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/main.css">
+</head>
+    <body>
+        @@include('sections/header.html')
+    
+        <div class="main-section">
+            <div class="main-content">
+                <nav aria-label="breadcrumb" class="main-breadcrumb">
+                    <ul class="main-breadcrumb__list">
+                        <li class="main-breadcrumb__item" ><a class="main-breadcrumb__link" href="./index.html">Home</a></li>
+                        <li class="main-breadcrumb__item"><a class="main-breadcrumb__link" href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                <h2 class="main-content__title section-title">Get in Touch with Us</h2>
+            </div>
+            <div class="hero-image">
+                <img class="contact-image__bg" src="./images/contact-main-bg.jpg" alt="Car Image">
+            </div>
+        </div>
+        
+        @@include('sections/contact-form.html')
+
+        @@include('sections/map-section.html')
+
+        <!-- section cta -->
+        <div class="container">
+            <div class="book-cta cta">
+                <img src="./images/cta-bg/book-cta.jpg" alt="Car Image">
+                <div class="book-content cta-content">
+                    <h4 class="book-content__subtitle section-title--sm">Find Your Perfect Ride</h4>
+                    <h2 class="book-content__title section-title">Explore Our Fleet and Book Your Dream Car Today!</h2>
+                    <button class="book-btn btn">Let’s Drive with Us</button>
+                </div>
+            </div>
+        </div>
+        <!-- ///section cta -->
+
+
+        @@include('sections/footer.html')
+
+        <!-- ===Scripting In=== -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

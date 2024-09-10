@@ -66,4 +66,3 @@ document.querySelectorAll('.accordion-header').forEach(header => {
     }
   });
 });
-

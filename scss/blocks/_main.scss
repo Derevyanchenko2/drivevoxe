@@ -172,3 +172,10 @@
         width: 100%;
     }
 }
+
+.contact-image__bg{
+    max-height: 400px;
+    height: 100%;
+    object-position: center top;
+    object-fit: cover;
+}

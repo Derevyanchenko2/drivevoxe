@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Drivevoxe</title>
+    <link rel="stylesheet" href="css/main.css">
+    <!--==== Google Fonts ===-->
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!--===Main CSS====-->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/main.css">
+</head>
+    <body>
+        <section class="single-car single-car__bg">
+            @@include('sections/header.html')
+            <nav aria-label="breadcrumb" class="main-breadcrumb">
+                <ul class="main-breadcrumb__list">
+                    <li class="main-breadcrumb__item" ><a class="main-breadcrumb__link" href="./index.html">Home</a></li>
+                    <li class="main-breadcrumb__item"><a class="main-breadcrumb__link" href="#">Cars</a></li>
+                    <li class="main-breadcrumb__item"><a class="main-breadcrumb__link" href="#">Cars detail</a></li>
+                </ul>
+            </nav>
+            <h2 class="section-title">Car Details</h2>
+        </section>
+        @@include('sections/logos.html')
+        @@include('sections/fleet.html')
+        @@include('sections/advantages.html')
+        @@include('sections/reviews.html')
+        @@include('sections/cta.html')
+        @@include('sections/footer.html')
+
+        <!-- ===Scripting In=== -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
