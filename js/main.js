@@ -66,3 +66,22 @@ document.querySelectorAll('.accordion-header').forEach(header => {
     }
   });
 });
+
+
+
+const ProductSwiper = new Swiper('.products-swiper', {
+  // Optional parameters
+  slidesPerView: 5, // Отображать 5 слайдов
+  navigation: {
+    nextEl: '.products-next-btn',
+    prevEl: '.products-prev-btn',
+  },
+});
+
+function closeLightbox() {
+  const lightbox = document.querySelector('.lb-container');
+  if (lightbox) {
+      const closeButton = lightbox.querySelector('.lb-close');
+      closeButton.click(); // Trigger Lightbox close functionality
+  }
+}

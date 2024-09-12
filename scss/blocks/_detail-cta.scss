@@ -1,0 +1,22 @@
+
+.detail-content {
+    left: 250px;
+    top: 56px;
+    max-width: 841px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.detail-content__title {
+    font-weight: 700;
+    color: $white;
+    margin-bottom: 56px;
+}
+
+.detail-btn {
+    max-width: 212px;
+    margin: 0 auto;
+}
+
+

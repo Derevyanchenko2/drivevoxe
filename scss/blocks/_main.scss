@@ -163,6 +163,18 @@
     color: $black;
 }
 
+.single-car__breadcrumb li::after {
+    content: '/'; 
+    margin: 0 8px; 
+    color: $white; 
+}
+.car-breadcrumb__link{
+    color: $white;
+}
+.car-details__title{
+    color: $white;
+}
+
 .main-content__title {
     text-align: center;
 }
@@ -178,4 +190,19 @@
     height: 100%;
     object-position: center top;
     object-fit: cover;
+}
+
+
+.single-car__bg{
+    background-image: url('../images/single-car-main.jpg'); 
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.single-main{
+    padding: 60px 0;
+    color: $white;
+}
+.single-car__breadcrumb{
+    justify-content: left;
 }

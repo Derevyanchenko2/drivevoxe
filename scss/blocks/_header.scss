@@ -174,3 +174,28 @@
         margin-bottom: 0;
 	}
 }
+
+// header black
+
+/* Стили для about-page */
+#about-page .header {
+    background-color: #fff;
+}
+
+#single-car-page .logo img {
+    filter: invert(1);
+}
+
+#single-car-page .header-menu a,
+#single-car-page .contact-link {
+    color: $white;
+    transition: 0.3s all;
+    &:hover{
+        transition: 0.3s all;
+        color: $red;
+    }
+}
+
+#single-car-page .burger span {
+    background-color: $white;
+}

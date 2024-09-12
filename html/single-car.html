@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Drivevoxe</title>
+    <link rel="stylesheet" href="css/main.css">
+    <!--==== Google Fonts ===-->
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!--===Main CSS====-->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/main.css">
+</head>
+    <body id="single-car-page">
+        <section class="single-car single-car__bg">
+          <!-- header -->
+          <div class="mobileMenu-overlay">
+            <div class="mobileMenu">
+                <button class="mobileMenu-close">&times;</button>
+                <div class="mobileMenu-container">
+                    <ul class="header-menu">
+                        <li class="mobileMenu-item">
+                            <a class="mobileMenu-link" href="#">Service</a>
+                        </li>
+                        <li class="mobileMenu-item">
+                            <a class="mobileMenu-link" href="./cars-page.html">Cars</a>
+                        </li>
+                        <li class="mobileMenu-item">
+                            <a class="mobileMenu-link" href="#">Pricing</a>
+                        </li>
+                        <li class="mobileMenu-item">
+                            <a class="mobileMenu-link" href="#">Pricing</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+          </div>
+        <header class="header">
+            <div class="container">
+                <div class="header-wrapper">
+                    <a href="./index.html" class="logo">
+                       <img src="./images/logo.svg" alt="drivevoxe logo">
+                    </a>
+                    <ul class="header-menu menu">
+                        <li>
+                            <a href="./index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="./cars-page.html">Cars</a>
+                        </li>
+                        <li>
+                            <a href="./faq-page.html">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="./about-page.html">About</a>
+                        </li>
+                    </ul>
+                    <div class="header-links">
+                        <a class="contact-link" href="./contact-page.html">Contact</a>
+                    </div>
+                    <div class="burger open-menu-js">
+                        <div class="open-menu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- header//// -->
+
+          
+            <div class="container">
+                <div class="single-main">
+                    <nav aria-label="breadcrumb" class="main-breadcrumb single-car__breadcrumb">
+                        <ul class="main-breadcrumb__list">
+                            <li class="main-breadcrumb__item car-breadcrumb__item" ><a class="main-breadcrumb__link car-breadcrumb__link" href="./index.html">Home</a></li>
+                            <li class="main-breadcrumb__item car-breadcrumb__item"><a class="main-breadcrumb__link car-breadcrumb__link" href="#">Cars</a></li>
+                            <li class="main-breadcrumb__item car-breadcrumb__item"><a class="main-breadcrumb__link car-breadcrumb__link" href="#">Cars detail</a></li>
+                        </ul>
+                    </nav>
+                    <h2 class="car-details__title section-title">Car Details</h2>
+                </div>
+            </div>
+        </section>
+        @@include('sections/car-rental.html') 
+        @@include('sections/features.html') 
+        @@include('sections/recommended-products.html') 
+
+            <!-- section cta -->
+            <div class="container">
+                <div class="book-cta cta">
+                    <img src="./images/cta-bg/car-detail-cta.jpg" alt="Car Image">
+                    <div class="detail-content cta-content">
+                        <h2 class="detail-content__title section-title">Book Your Adventure Today and Feel the Power of the Open Road.</h2>
+                        <button class="detail-btn btn">Let’s Drive with Us</button>
+                    </div>
+                </div>
+            </div>
+            <!-- ///section cta -->
+        
+        @@include('sections/footer.html') 
+
+        <!-- ===Scripting In=== -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
