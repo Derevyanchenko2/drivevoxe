@@ -3,11 +3,27 @@
     font-weight: 700;
     font-size: 56px;
     color: $black;
+    @media(max-width:992px){
+        font-size: 42px;
+    }
+    @media(max-width:768px){
+        font-size: 34px;
+        font-weight: 600;
+    }
     &--md{
         font-family: "Syne", sans-serif;
         font-weight: 500;
         font-size: 48px;
         color: $black;
+        @media(max-width:1200px){
+            font-size: 42px;
+        }
+        @media(max-width:992px){
+            font-size: 32px;
+        }
+        @media(max-width:768px){
+            font-size: 26px;
+        }
     }
     &--sm{
         font-weight: 600;
@@ -15,6 +31,9 @@
         text-transform: uppercase;
         text-align: center;
         color: $black;
+        @media(max-width:768px){
+            font-size: 17px;
+        }
     }
 }
 .column-title{
@@ -22,6 +41,12 @@
     font-size: 24px;
     color: $black;
     // opacity: 0.6;
+    @media(max-width: 992px){
+        font-size: 20px;
+    }
+    @media(max-width: 768px){
+        font-size: 18px;
+    }
 }
 .section-text{
     font-family: "Syne", sans-serif;
@@ -30,6 +55,9 @@
     line-height: 133%;
     color: $black;
     opacity: 0.6;
+    @media(max-width:768px){
+        font-size: 16px;
+    }
     &--sm{
         font-family: "Syne", sans-serif;
         font-weight: 500;

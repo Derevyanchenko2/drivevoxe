@@ -2,23 +2,37 @@
     <div class="mobileMenu">
         <button class="mobileMenu-close">&times;</button>
         <div class="mobileMenu-container">
-            <ul class="header-menu">
+            <div class="mobileMenu-logo">
+              <img src="./images/logo-white.svg" alt="logo white">
+            </div>
+            <ul class="header-mobileMenu">
                 <li class="mobileMenu-item">
-                    <a class="mobileMenu-link" href="#">Service</a>
+                    <a class="mobileMenu-link" href="#">Home</a>
                 </li>
                 <li class="mobileMenu-item">
-                    <a class="mobileMenu-link" href="./cars-page.html">Cars</a>
+                    <a class="mobileMenu-link" href="#">About</a>
                 </li>
                 <li class="mobileMenu-item">
-                    <a class="mobileMenu-link" href="#">Pricing</a>
+                    <a class="mobileMenu-link" href="#">Cars</a>
+                    <ul class="sub-menu">
+                        <li class="sub-menu__item"><a class="header-link sub-menu__link" href="#">Sedan</a></li>
+                        <li class="sub-menu__item"><a class="header-link sub-menu__link" href="#">SUV</a></li>
+                        <li class="sub-menu__item"><a class="header-link sub-menu__link" href="#">Convertible</a></li>
+                        <li class="sub-menu__item"><a class="header-link sub-menu__link" href="#">Coupe</a></li>
+                        <li class="sub-menu__item"><a class="header-link sub-menu__link" href="#">Sports Car</a></li>
+                    </ul>
                 </li>
                 <li class="mobileMenu-item">
-                    <a class="mobileMenu-link" href="#">Pricing</a>
+                    <a class="mobileMenu-link" href="#">FAQ</a>
                 </li>
             </ul>
+            <div class="mobileMenu-contact">
+                <a href="#" class="contact-link--mobile btn">Contact</a>
+            </div>
         </div>
     </div>
-  </div>
+</div>
+
 <header class="header">
     <div class="container">
         <div class="header-wrapper">
@@ -39,9 +53,7 @@
                     <a href="./about-page.html">About</a>
                 </li>
             </ul>
-            <div class="header-links">
-                <a class="contact-link" href="./contact-page.html">Contact</a>
-            </div>
+            <a class="contact-link btn" href="./contact-page.html">Contact</a>
             <div class="burger open-menu-js">
                 <div class="open-menu">
                     <span></span>

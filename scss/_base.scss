@@ -41,6 +41,9 @@
 // 	-ms-overflow-style: scrollbar; 
 //   }
   
+html, body {
+    overflow-x: hidden;
+}
 
 
 * {
