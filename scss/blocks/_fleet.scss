@@ -81,12 +81,18 @@
 }
 .car-item__image {
     margin-bottom: 32px;
+    @media(max-width: 768px){
+        margin-bottom: 15px;
+    }
     img{
         width: 100%;
     }
 }
 .car-content__title {
     margin-bottom: 23px;
+    @media(max-width: 768px){
+        margin-bottom: 15px;
+    }
 
 }
 .car-bottom__wrapper {
