@@ -197,6 +197,9 @@
     max-width: 630px;
     width: 100%;
     margin: 0 auto;
+    @media(max-width: 768px){
+        padding: 45px 0;
+    }
 }
 .main-breadcrumb {
     display: flex;
@@ -218,12 +221,18 @@
     font-size: 20px;
     text-transform: uppercase;
     color: $black;
+    @media(max-width: 768px){
+        font-size: 17px;
+    }
 }
 
 .single-car__breadcrumb li::after {
     content: '/'; 
     margin: 0 8px; 
     color: $white; 
+    @media(max-width: 768px){
+        margin: 0 6px;
+    }
 }
 .car-breadcrumb__link{
     color: $white;
