@@ -3,15 +3,31 @@
 }
 .accordion {
   padding: 100px 0;
+  @media(max-width: 992px){
+    padding: 80px 0;
+  }
+  @media(max-width: 768px){
+    padding: 65px 0;
+  }
 }
 
 .accordion-wrapper {
   display: flex;
+  @media(max-width: 992px){
+    flex-wrap: wrap;
+  }
 }
 
 .booking-box {
   margin-right: 40px;
 }
+@media(max-width:992px){
+  .booking-box:not(:last-child){
+    margin-bottom: 40px;
+    margin-right: 0;
+  }
+}
+
 
 .accordion-top {
   margin-bottom: 80px;
@@ -28,6 +44,9 @@
 .accordion-box {
   max-width: 650px;
   width: 100%;
+  @media(max-width: 992px){
+    max-width: 100%;
+  }
 }
 
 .accordion-item {
@@ -50,6 +69,11 @@
   align-items: center;
   position: relative;
   transition: background-color 0.3s ease, color 0.3s ease;
+  @media(max-width:768px){
+    padding: 15px;
+    font-size: 16px;
+  }
+  
 }
 .accordion-header .accordion-arrow {
   position: absolute;
@@ -61,6 +85,12 @@
   border-bottom: 2px solid $black;
   transform: rotate(45deg);
   transition: transform 0.3s ease;
+  @media(max-width: 768px){
+    right: 15px;
+    top: 25px;
+    width: 10px;
+    height: 10px;
+  }
 }
 
 .accordion-item.active .accordion-arrow {
@@ -73,6 +103,7 @@
   border-bottom: 2px solid $white;
   background-color: $red; 
   color: $white; 
+
 }
 .accordion-header::after {
   content: "";
@@ -98,6 +129,11 @@
   font-size: 14px;
   line-height: 114%;
   color: $black; 
+  @media(max-width:768px){
+    padding-left: 15px;
+    padding-right: 15px;
+
+  }
 }
 
 .accordion-item.active .accordion-header {
@@ -120,3 +156,5 @@
 .accordion-item.active .accordion-content p {
   color: $white;
 }
+
+

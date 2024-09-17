@@ -8,23 +8,20 @@
     min-height: 495px;
 }
 
-.achievements-content__subtitle{
+.achievements-content__subtitle {
     margin-bottom: 16px;
     text-align: left;
 }
 
 .achievements-content--left {
-    padding-left: 144px;
-    padding-right: 70px;
-}
-
-.achievements-content--left {
-    background-color: $white;
+    background-color: #fff;
     max-width: 614px;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-left: 144px;
+    padding-right: 70px;
 }
 
 .achievements-content--right {
@@ -33,8 +30,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    @media(max-width: 768px){
+        justify-content: start;
+        padding-left: 15px;
+    }
 }
-
 
 .achievements-row {
     display: grid;
@@ -42,12 +42,80 @@
     grid-gap: 30px;
     padding-left: 72px;
 }
-.achievements-item__icon{
+
+.achievements-item__icon {
     margin-bottom: 16px;
 }
-.achievements-item__title{
+
+.achievements-item__title {
     font-family: "Syne", sans-serif;
     font-weight: 700;
     font-size: 16px;
-    color: $black;
+    color: #000;
+}
+
+/* Media query for 1200px resolution */
+@media (max-width: 1200px) {
+    .achievements-content--left {
+        padding-left: 100px;
+        padding-right: 50px;
+    }
+
+    .achievements-row {
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 25px;
+        padding-left: 50px;
+    }
+}
+
+/* Media query for 992px resolution */
+@media (max-width: 992px) {
+    .achievements-wrapper {
+        flex-direction: column;
+    }
+
+    .achievements-content--left {
+        padding-left: 50px;
+        padding-right: 50px;
+        margin-bottom: 40px;
+    }
+
+    .achievements-row {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+        padding: 40px;
+    }
+}
+
+/* Media query for 768px resolution */
+@media (max-width: 768px) {
+    .achievements-wrapper {
+        flex-direction: column;
+    }
+
+    .achievements-content--left {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .achievements-row {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+        padding: 20px;
+    }
+}
+
+/* Media query for mobile screens */
+@media (max-width: 480px) {
+    .achievements-row {
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .achievements-content--left {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }

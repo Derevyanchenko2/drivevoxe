@@ -3,9 +3,25 @@
     left: 100px;
     top: 56px;
     max-width: 702px;
+    @media(max-width: 768px){
+        left: 15px;
+        top: 30px;
+    }
 }
 .reserve-content__title {
     color: $white;
     margin-bottom: 46px;
+    @media(max-width: 768px){
+        margin-bottom:34px;
+    }
+    @media(max-width: 480px){
+        margin-bottom:20px;
+    }
+}
+
+@media(max-width: 768px){
+    .reserve-cta__image{
+        object-position: 57.7% 47.5%;
+    }
 }
 

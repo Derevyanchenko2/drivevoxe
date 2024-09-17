@@ -39,6 +39,9 @@
 }
 .rental-item__title {
     margin-bottom: 48px;
+    @media(max-width: 768px){
+        margin-bottom: 20px;
+    }
 }
 .rental-item__text {
     font-family: "Syne", sans-serif;
@@ -47,4 +50,64 @@
     line-height: 133%;
     color: $black;
     opacity: 0.6;
+}
+
+@media (max-width: 1200px){
+    .rental-image{
+        max-width: 730px;
+        img{
+            width: 100%;
+        }
+    }
+    .rental-item{
+        padding: 40px;
+    }
+    .rental-item__title{
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 992px) {
+    .rental {
+        padding: 65px 0;
+    }
+
+    .rental-wrapper {
+        display: flex;
+        flex-direction: column;
+        // text-align: center;
+    }
+
+    .pick-car {
+        margin-bottom: 20px;
+        justify-content: center;
+    }
+
+    .rental-arrow {
+        width: 40px;
+        height: 40px;
+    }
+
+    .rental-content {
+        order: 1; 
+        position: static;
+        max-width: 100%;
+        // padding: 20px;
+        // text-align: center;
+    }
+
+    .rental-item {
+        padding: 20px;
+    }
+
+    .rental-image {
+        order: 2; 
+        margin-top: 20px;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .rental-image img {
+        width: 100%;
+        height: auto;
+    }
 }
