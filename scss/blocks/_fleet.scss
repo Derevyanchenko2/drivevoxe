@@ -45,6 +45,23 @@
     margin-bottom: 30px;
    }
 }
+@media (max-width: 768px) {
+    .car-column {
+        width: 100%;
+        max-width: 100%;
+        margin-right: 0;
+    }
+
+    .cars-сatalog {
+        margin-right: 0;
+        padding: 0;
+    }
+
+    .cars-wrapper {
+        flex-direction: column;
+    }
+}
+
 .car-item {
     border-radius: 10px;
     background: rgba(34, 34, 34, 0.03);

@@ -1,20 +1,35 @@
 .cars {
     padding: 100px 0;
+    @media(max-width: 768px){
+        padding: 65px 0;
+    }
 }
 .cars-wrapper {
     display: flex;
+    @media(max-width: 1350px){
+        flex-direction: column;
+    }
 }
 
 .cars-сatalog {
     max-width: 935px;
     width: 100%;
     margin-right: 84px;
+    @media(max-width: 1350px){
+        margin-right: 0;
+        max-width: 100%;
+    }
 }
 
 // sidebar
 .sidebar {
     max-width: 320px;
     background-color: #fff;
+    @media(max-width: 1350px){
+        max-width: 100%;
+        margin-top: 40px;
+
+    }
 }
 
 .sidebar-group:not(:last-child){
@@ -40,6 +55,14 @@
 .popular-car:not(:last-child){
     margin-bottom: 16px;
 }
+.popular-cars{
+    @media(max-width: 1350px){
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 30px;
+    }   
+}
 .popular-car {
     display: flex;
     align-items: flex-start;
@@ -48,6 +71,10 @@
         width: 100%;
         border-radius: 10px;
     }
+    @media(max-width: 1350px){
+        display: flex;
+        align-items: center;
+    } 
 }
 .car-info{
     margin-left: 16px;
@@ -63,7 +90,7 @@
 }
 .category-list {
     display: flex;
-    gap: 32px;
+    gap: 50px;
   }
   
   .category-column {
