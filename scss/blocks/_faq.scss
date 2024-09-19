@@ -39,6 +39,9 @@
   font-weight: 700;
   font-size: 24px;
   color: $black; 
+  @media(max-width: 768px){
+    margin-bottom: 25px;
+  }
 }
 
 .accordion-box {
@@ -70,7 +73,7 @@
   position: relative;
   transition: background-color 0.3s ease, color 0.3s ease;
   @media(max-width:768px){
-    padding: 15px;
+    // padding: 15px;
     font-size: 16px;
   }
   

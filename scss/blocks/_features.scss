@@ -1,12 +1,19 @@
 .features {
-    padding: 50px 0;
+    padding-bottom: 50px;
 }
 .features-wrapper {
     display: flex;
+    @media(max-width: 768px){
+        flex-direction: column;
+    }
 }
 
 .features-title {
     margin-right: 57px;
+    @media(max-width: 768px){
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
 }
 .features-row {
     margin-left: -15px;
@@ -19,6 +26,10 @@
     flex: 0 50%;
     max-width: 0 50%;
     margin-bottom: 24px;
+    @media(max-width: 768px){
+        flex: 0 100%;
+        max-width: 0 100%;
+    }
 }
 .features-item {
     border-radius: 10px;

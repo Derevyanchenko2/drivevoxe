@@ -28,11 +28,15 @@
         top: 60px;
     }
     @media(max-width: 768px){
-     display: flex;
-     flex-direction: column;
-     text-align: center;
+        // max-width: 320px;
+        // width: 100%;
+        top: 95px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
     }
 }
+.cta
 .ready-content__text{
     margin: 32px 0px;
     @media(max-width: 1200px){
@@ -55,7 +59,8 @@
     align-items: center;
     gap: 16px;
     @media(max-width: 768px){
-       justify-content: center;
+        gap: 10px;
+        justify-content: center;
     }
 }
 .cta-button {

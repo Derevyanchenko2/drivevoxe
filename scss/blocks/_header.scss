@@ -187,19 +187,18 @@
 
 .burger span {
     display: block;
-    width: 30px;
+    width: 32px;
     height: 3px;
-    margin-bottom: 6px;
+    margin-bottom: 5px;
     background-color: #000;
     transition: all 0.3s;
 }
 
-.burger span:first-child {
-    width: 39px;
-}
+// .burger span:first-child {
+//     width: 39px;
+// }
 
 .burger span:last-child {
-    width: 18px;
     margin-bottom: 0;
 }
 

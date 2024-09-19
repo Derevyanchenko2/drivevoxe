@@ -68,15 +68,34 @@ document.querySelectorAll('.accordion-header').forEach(header => {
 });
 
 
-
 const ProductSwiper = new Swiper('.products-swiper', {
-  // Optional parameters
-  slidesPerView: 5, // Отображать 5 слайдов
+  slidesPerView: 5, // Default number of slides for larger screens
+  spaceBetween: 35, // Space between slides
   navigation: {
     nextEl: '.products-next-btn',
     prevEl: '.products-prev-btn',
   },
+  loop: true, 
+  breakpoints: {
+    320: {  // For very small screens
+      slidesPerView: 1, 
+      spaceBetween: 10,
+    },
+    480: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 25,
+    },
+    1024: {
+      slidesPerView: 4, 
+    },
+  },
 });
+
+
 
 function closeLightbox() {
   const lightbox = document.querySelector('.lb-container');

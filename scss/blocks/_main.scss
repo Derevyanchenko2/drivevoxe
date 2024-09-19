@@ -198,13 +198,16 @@
     width: 100%;
     margin: 0 auto;
     @media(max-width: 768px){
-        padding: 45px 0;
+        padding: 40px 0;
     }
 }
 .main-breadcrumb {
     display: flex;
     justify-content: center;
     margin-bottom: 22px;
+    @media(max-width: 768px){
+        margin-bottom: 15px;
+    }
 }
 .main-breadcrumb li + li::before {
     content: "/";
@@ -246,8 +249,13 @@
 }
 
 .hero-image {
+    max-width: 100%;
     img{
         width: 100%;
+        min-height: 300px;
+        object-position: center center;
+        object-fit: cover;
+        image-rendering: auto;
     }
 }
 

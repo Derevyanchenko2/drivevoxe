@@ -10,7 +10,7 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    gap: 30px; /* Adds space between items */
+    gap: 30px; 
 }
 
 .partners-logo {
@@ -36,8 +36,7 @@
 
 @media (max-width: 768px) {
     .partners-logos {
-        justify-content: center;
-        gap: 15px;
+        gap: 30px;
     }
 
     .partners-logo {
@@ -46,8 +45,11 @@
 }
 
 @media (max-width: 576px) {
+    .partners{
+        padding: 15px;
+    }
     .partners-logos {
-        flex-direction: column;
+        // flex-direction: column;
         align-items: center;
     }
 
